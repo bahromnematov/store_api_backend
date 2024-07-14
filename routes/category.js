@@ -48,7 +48,7 @@ router.post('/', asyncHandler(async (req, res) => {
             const { name } = req.body;
             let imageUrl = 'no_url';
             if (req.file) {
-                imageUrl = `https://a527-213-230-92-247.ngrok-free.app/image/category/${req.file.filename}`;
+                imageUrl = `https://3a2b-213-230-92-247.ngrok-free.app/image/category/${req.file.filename}`;
             }
             console.log('url ', req.file)
 
@@ -96,7 +96,7 @@ router.put('/:id', asyncHandler(async (req, res) => {
             let image = req.body.image;
 
             if (req.file) {
-                image = `https://a527-213-230-92-247.ngrok-free.app/image/category/${req.file.filename}`;
+                image = `https://3a2b-213-230-92-247.ngrok-free.app/image/category/${req.file.filename}`;
             }
 
             if (!name || !image) {

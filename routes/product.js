@@ -81,7 +81,7 @@ router.post('/', asyncHandler(async (req, res) => {
             fields.forEach((field, index) => {
                 if (req.files[field] && req.files[field].length > 0) {
                     const file = req.files[field][0];
-                    const imageUrl = `https://a527-213-230-92-247.ngrok-free.app/image/products/${file.filename}`;
+                    const imageUrl = `https://3a2b-213-230-92-247.ngrok-free.app/image/products/${file.filename}`;
                     imageUrls.push({ image: index + 1, url: imageUrl });
                 }
             });
@@ -146,7 +146,7 @@ router.put('/:id', asyncHandler(async (req, res) => {
             fields.forEach((field, index) => {
                 if (req.files[field] && req.files[field].length > 0) {
                     const file = req.files[field][0];
-                    const imageUrl = `https://a527-213-230-92-247.ngrok-free.app/image/products/${file.filename}`;
+                    const imageUrl = `https://3a2b-213-230-92-247.ngrok-free.app/image/products/${file.filename}`;
                     // Update the specific image URL in the images array
                     let imageEntry = productToUpdate.images.find(img => img.image === (index + 1));
                     if (imageEntry) {

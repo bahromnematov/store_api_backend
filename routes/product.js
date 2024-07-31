@@ -146,7 +146,7 @@ router.put('/:id', asyncHandler(async (req, res) => {
             fields.forEach((field, index) => {
                 if (req.files[field] && req.files[field].length > 0) {
                     const file = req.files[field][0];
-                    const imageUrl = `https://037a-84-54-71-73.ngrok-free.app/image/products/${file.filename}`;
+                    const imageUrl = `https://2926-84-54-70-123.ngrok-free.app/image/products/${file.filename}`;
                     // Update the specific image URL in the images array
                     let imageEntry = productToUpdate.images.find(img => img.image === (index + 1));
                     if (imageEntry) {

@@ -46,7 +46,7 @@ router.post('/', asyncHandler(async (req, res) => {
             const { posterName } = req.body;
             let imageUrl = 'no_url';
             if (req.file) {
-                imageUrl = `https://1b72-84-54-70-19.ngrok-free.app/image/poster/${req.file.filename}`;
+                imageUrl = `https://c323-84-54-70-19.ngrok-free.app/image/poster/${req.file.filename}`;
             }
 
             if (!posterName) {

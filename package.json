@@ -9,15 +9,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.6.8",
+    "axios": "^1.7.3",
+    "azizdev-eskiz-uz": "^1.2.4",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-async-handler": "^1.2.0",
+    "form-data": "^4.0.0",
     "mongoose": "^8.3.2",
     "multer": "^1.4.5-lts.1",
     "onesignal-node": "^3.4.0",
+    "otp-generator": "^4.0.1",
     "stripe": "^15.6.0"
   }
 }

@@ -35,6 +35,8 @@ app.use('/orders', require('./routes/order'));
 app.use('/payment', require('./routes/payment'));
 app.use('/notification', require('./routes/notification'));
 
+app.use('/auth', require('./routes/auth'));
+
 
 // Example route using asyncHandler directly in app.js
 app.get('/', asyncHandler(async (req, res) => {

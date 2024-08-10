@@ -54,13 +54,13 @@ router.get('/:id', asyncHandler(async (req, res) => {
 
 // Create a new user
 router.post('/register', asyncHandler(async (req, res) => {
-    const { name, password } = req.body;
+    const { name, password, phone } = req.body;
     if (!name || !password) {
         return res.status(400).json({ success: false, message: "Name, and password are required." });
     }
 
     try {
-        const user = new User({ name, password });
+        const user = new User({ name, password, phone });
         const newUser = await user.save();
         res.json({ success: true, message: "User created successfully.", data: null });
     } catch (error) {

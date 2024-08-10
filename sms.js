@@ -33,7 +33,7 @@ class Sms {
   async send({ phone, message }) {
     try {
       const data = JSON.parse(
-        fs.readFileSync(path.join(__dirname, "token.json"))
+        fs.readFileSync(path.join(__dirname, "token.json"))||"{}"
       );
       const formdata = new FormData()
       formdata.append('mobile_phone', phone);

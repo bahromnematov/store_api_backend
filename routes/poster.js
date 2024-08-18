@@ -46,7 +46,7 @@ router.post('/', asyncHandler(async (req, res) => {
             const { posterName } = req.body;
             let imageUrl = 'no_url';
             if (req.file) {
-                imageUrl = `https://e045-84-54-70-19.ngrok-free.app/image/poster/${req.file.filename}`;
+                imageUrl = `https://cd1d-84-54-72-106.ngrok-free.app/image/poster/${req.file.filename}`;
             }
 
             if (!posterName) {
@@ -94,7 +94,7 @@ router.put('/:id', asyncHandler(async (req, res) => {
 
 
             if (req.file) {
-                image = `https://e045-84-54-70-19.ngrok-free.app/image/poster/${req.file.filename}`;
+                image = `https://cd1d-84-54-72-106.ngrok-free.app/image/poster/${req.file.filename}`;
             }
 
             if (!posterName || !image) {
